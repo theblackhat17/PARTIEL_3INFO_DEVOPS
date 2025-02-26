@@ -1,31 +1,62 @@
-# Partiel DEVOPS - Exemple avec Python et GitHub Actions
+# 🚀 Projet DevOps : CI/CD avec GitHub Actions
 
-Ce dépôt contient un projet Python simple avec :
+[![Run Tests](https://github.com/theblackhat17/PARTIEL_3INFO_DEVOPS/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/theblackhat17/PARTIEL_3INFO_DEVOPS/actions/workflows/tests.yml)  
+[![Lint Code](https://github.com/theblackhat17/PARTIEL_3INFO_DEVOPS/actions/workflows/linter.yml/badge.svg?branch=master)](https://github.com/theblackhat17/PARTIEL_3INFO_DEVOPS/actions/workflows/linter.yml)
 
-- Des fonctions simples
-- Des tests unitaires pour valider le comportement de la fonction.
+## 📌 Description
+Ce projet DevOps intègre un pipeline **CI/CD** automatisé avec **GitHub Actions** pour assurer la qualité et la fiabilité du code Python. Il inclut :
 
-## Installation
+- 🔹 **Tests unitaires** avec `unittest` pour garantir la robustesse du code.
+- 🔹 **Linting** avec `flake8` pour s'assurer du respect des bonnes pratiques de codage.
+- 🔹 **Intégration continue (CI)** pour exécuter les tests et analyser la qualité du code à chaque `push` ou `pull request`.
 
-1. Clonez ce dépôt :
-   ```bash
-   git clone https://github.com/<votre-organisation>/<votre-repo>.git
-   cd <votre-repo>
+---
 
-2. Installez les dépendances :
-```pip install -r requirements.txt```
+## ⚙️ Configuration & Installation
 
-3. Exécutez les tests localement :
-```pytest```
+### 1️⃣ **Cloner le dépôt**
+```bash
+git clone https://github.com/theblackhat17/PARTIEL_3INFO_DEVOPS.git
+cd PARTIEL_3INFO_DEVOPS
+```
 
-4. Ajouter un .gitignore pour ne pas commit __pycache__ et autre dossiers non pertinents à commit 
+### 2️⃣ **Créer et activer un environnement virtuel**
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows : venv\Scripts\activate
+```
 
-4. Creez un github workflow pour éxécuter des tests et  un github workflow pour éxécuter le linter 
+### 3️⃣ **Installer les dépendances**
+```bash
+pip install -r requirements.txt
+```
 
-5. Ajouter des badges de réussite d'execution de vos tests et de votre linter dans le readme (voir ***GITHUB_BADGES_GUIDE.md***)
+---
 
-6. Améliorer le code pour réussir le linter
+## 🧪 Exécution des tests
+### 4️⃣ **Lancer les tests unitaires**
+```bash
+python -m unittest tests_app.py
+```
+Si tout se passe bien, les tests doivent être validés ✅.
 
-7. Rendre le lien de votre répository contenant les github actions que vous aurez implémenté. 
+---
 
-***Attention à bien mettre votre repository en PUBLIC !***
+## 🚀 Workflows GitHub Actions
+### 🛠️ **Automatisation des tâches DevOps**
+- **📌 `Run Tests`** : Exécute les tests unitaires automatiquement.
+- **📌 `Lint Code`** : Vérifie la qualité du code Python.
+
+Ces workflows sont déclenchés **automatiquement** à chaque `push` ou `pull request`.
+
+---
+
+## 📝 Auteurs & Contributions
+👤 **@theblackhat17** - Développement et intégration DevOps.
+
+🔄 Contributions bienvenues ! N'hésite pas à forker et proposer des améliorations via une `Pull Request`.
+
+---
+
+## 📜 Licence
+Projet sous licence **MIT**. Utilisation libre et ouverte à la communauté ! 🎉
